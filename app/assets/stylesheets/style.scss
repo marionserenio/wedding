@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('proximanova-regular-webfont.eot');
+    src: url('proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg'),
+       url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-regular-webfont.woff') format('woff'),
+         url('proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg'),
+         url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.svg#proxima_novalight') format('svg'),
+         url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light-webfont.woff') format('woff'),
+         url('proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$darkgrey :#272727;
+$darkblue :#2b2f3a;
+$oldcolor: #798583;
+nav.first-nav{
+	font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	ul{
+		list-style: none;
+		padding: 50px 0px 0px 0px;
+		li{
+			a{
+				color:$darkblue;
+				padding:8px 0px 8px 0px;
+				font-size:15px;
+				@include transition-duration(0.25s);
+				&:hover{
+					color:$darkblue;
+				}
+			}
+		}
+	}
+	.text-right{
+		li{
+			float: left;
+			margin:0px 30px 0px 30px;
+		}
+	}
+	.text-left{
+		margin-right:50px;
+		li{
+			float: right;
+			margin:0px 15px 0px 15px;
+		}
+	}
+	.login{
+		border:2px solid $oldcolor;
+		padding:8px 25px 8px 25px;
+		background: #fff;
+		color:$oldcolor;
+		&:hover{
+			border:2px solid $oldcolor;
+			background:$oldcolor;
+			color:#fff;
+		}
+	}
+}
+nav.second-nav{
+	border-top:1px solid $darkgrey;
+	border-bottom:1px solid $darkgrey;
+	float: left;
+	width: 100%;
+	ul{
+		margin:0px;
+		padding:0px;
+		list-style: none;
+		li{
+			float: left;
+			a{
+				padding:8px 20px 10px 20px;
+				display: block;
+				color:$darkgrey;
+				font-size:12px;
+			}
+		}
+	}
+}
+h1{
+	font-family: "proxima_novalight", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	strong{
+		font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+h2{
+	font-family: "proxima_novalight", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	strong{
+		font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+h3{
+	font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size:1.8em;
+}
+h4{
+	font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin-bottom:0px;
+	font-size:1.2em;
+}
+h5{
+	font-family: "proxima_novalight", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	strong{
+		font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+h6{
+	font-family: "proxima_novasemibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+p, ol, address{
+	font-size:14px;
+	color:#666;
+	line-height: 23px;
+}
+ul, ol{
+	margin-left:20px;
+}
+.home-slider{
+	width: 100%;
+	height: 420px;
+	background: #f6f6f6;
+	padding:20px 0px 20px 0px;
+}

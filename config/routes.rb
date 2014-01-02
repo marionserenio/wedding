@@ -1,4 +1,6 @@
 Weddingapp::Application.routes.draw do
+  devise_for :users
+
   devise_for :models
 
   # The priority is based upon order of creation:
